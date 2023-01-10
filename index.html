@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Admin Page</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <div id="app"></div>
+  <h1 style="text-align: center">Admin Page</h1>
+
+  <form>
+    <label for="productprice">Seller Price :</label>
+    <input type="number" id="productprice" name="productprice" />
+
+    <label for="productname"> Product Name :</label>
+    <input type="text" id="productname" name="productname" />
+
+    <label for="tablenumber"> Choose a Table :</label>
+    <select id="tablenumber" name="tablenumber">
+      <option id="table1" value="table1">Electronic Item </option>
+      <option id="table2" value="table2">Food Item </option>
+      <option id="table3" value="table3">Skin Care Item </option>
+    </select>
+
+    <input type="submit" value="Add Product" id="addtobill" />
+  </form>
+
+  <h1 style="color:red; font-size:50px; text-align:center;">Products </h1>
+
+  <ul style="color:blue; font-size:20px; text-align:left;">Electronic Item </ul>
+  <ol id="listoforders1"></ol>
+  <ul style="color:blue; font-size:20px; text-align:left;">Food Item </ul>
+  <ol id="listoforders2"></ol>
+  <ul style="color:blue; font-size:20px; text-align:left;">Skin Care Item </ul>
+  <ol id="listoforders3"></ol>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
